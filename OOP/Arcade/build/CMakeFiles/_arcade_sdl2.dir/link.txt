@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wall -Wextra -pedantic -Wfloat-equal -Wshadow -Weffc++ -Wstrict-overflow=5 -Wcast-align -Wconversion -ftrapv -Wuninitialized -Wnon-virtual-dtor -fPIC -D_GLIBCXX_USE_CXX11_ABI=0  -shared -Wl,-soname,lib_arcade_sdl2.so -o ../libs/lib_arcade_sdl2.so CMakeFiles/_arcade_sdl2.dir/lib/SLD2/SDL2.cpp.o -lSDL2 -lSDL2_image -lSDL2_ttf 

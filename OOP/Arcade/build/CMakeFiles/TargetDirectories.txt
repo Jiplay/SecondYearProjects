@@ -1,0 +1,6 @@
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/_arcade_sdl2.dir
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/_arcade_sfml.dir
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/rebuild_cache.dir
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/_arcade_ncurses.dir
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/edit_cache.dir
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/build/CMakeFiles/arcade.dir

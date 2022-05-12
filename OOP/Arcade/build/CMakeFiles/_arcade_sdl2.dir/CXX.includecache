@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ALibs.hpp
+ILibs.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ILibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ILibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/SLD2/SDL2.cpp
+SDL2.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/SLD2/SDL2.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/SLD2/SDL2.hpp
+SDL2/SDL.h
+-
+SDL2/SDL_ttf.h
+-
+iostream
+-
+string
+-
+../ALibs.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ALibs.hpp
+

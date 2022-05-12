@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ALibs.hpp
+ILibs.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ILibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ILibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/src/core/core.hpp
+iostream
+-
+../../lib/ALibs.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ALibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/src/core/main_core.cpp
+core.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/src/core/core.hpp
+dlfcn.h
+-
+../exceptions/error.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/src/exceptions/error.hpp
+../../lib/ALibs.hpp
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/lib/ALibs.hpp
+
+/workspace/EPITECH/Delivery/2yearbis/OOP/B-OOP-400-PAR-4-1-arcade-ibrahim.zafar/src/exceptions/error.hpp
+string
+-
+

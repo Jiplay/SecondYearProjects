@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -pedantic -Wfloat-equal -Wshadow -Weffc++ -Wstrict-overflow=5 -Wcast-align -Wconversion -ftrapv -Wuninitialized -Wnon-virtual-dtor -fPIC -D_GLIBCXX_USE_CXX11_ABI=0   CMakeFiles/arcade.dir/main.cpp.o CMakeFiles/arcade.dir/src/core/main_core.cpp.o CMakeFiles/arcade.dir/src/exceptions/error.cpp.o  -o ../arcade -ldl 
