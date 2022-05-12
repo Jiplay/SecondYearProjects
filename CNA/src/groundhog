@@ -1,0 +1,138 @@
+#!/usr/bin/python3
+
+import sys
+import math
+
+def help_me():
+    print("SYNOPSIS")
+    print("\t./groundhog period")
+    print("\nDESCRIPTION")
+    print("\tperiod\tthe number of days defining a period")
+
+
+def calcul_s(temp, period):
+    if (len(temp) < period):
+        return "nan"
+    moy = sum(temp[-period:]) / period
+    i = 0
+    tot = 0
+    while i != period:
+        tot += (temp[len(temp) - period + i] - moy)**2
+        i += 1
+    return format(round(math.sqrt(tot / period), 2), '0.2f')
+
+
+def calcul_r(temp, period):
+    if (len(temp) <= period):
+        return "nan"
+    a = temp[len(temp) - period - 1]
+    if a == 0:
+        return "man"
+    b = round(((temp[-1] - a) / a)* 100)
+    return b
+
+
+def calcul_g(temp, period):
+    if (len(temp) <= period):
+        return "nan"
+    g = 0
+    top = 0
+    count = len(temp) - period
+    while count != len(temp):
+        top = temp[count] - temp[count-1]
+        if (top < 0):
+            top = 0
+        g += top
+        count += 1
+    return format(round(g/period, 2), '0.2f')
+
+
+def tell_them(a, b):
+    print(a)
+    exit(b)
+
+# def calc_weirdest_value(list_temperature, periode):
+#     weirdest_value_list = list()
+#     if (len(list_temperature) < 2):
+#         raise ValueError("Error : cannot calculate weirdest value, not enought temperature")
+#     for i in range(1, len(list_temperature) - 1, 1):
+#         expected_value = (list_temperature[i - 1] + list_temperature[i + 1]) / 2
+#         difference = abs(expected_value - list_temperature[i])
+#         weirdest_value_list.append((list_temperature[i], difference))
+#     # Tri en prenant les 2ème valeur de la list de tuple
+#     weirdest_value_list.sort(key=lambda tup: tup[1])
+#     # Prendre seulement les 5 derniers tuples de la list
+#     nb_weirdest_value = 5
+#     if (len(weirdest_value_list) < 5):
+#         nb_weirdest_value = len(weirdest_value_list)
+#     five_weirdest_value = weirdest_value_list[-nb_weirdest_value:]
+#     # Une boucle en prenant que les premiers élement de la tuple
+#     five_weirdest_value = [i[0] for i in five_weirdest_value]
+
+
+def switch(a, b):
+    print("On est là pour ça")
+    print(a, b)
+
+    if a != "nan" and b != "nan":
+        res = int(a) * int(b)
+        if res <= 0:
+            return "\ta switch occurs"
+    return ""
+
+
+def main(period):
+    r = 0
+    nbs = []
+    try:
+        inp = input()
+    except (EOFError, KeyboardInterrupt):
+        exit(84)
+
+    while (inp != "STOP"):
+        try:
+            float(inp)
+        except (ValueError, TypeError):
+            tell_them("Is that a float nb ? ", 84)
+
+        nbs.append(float(inp))
+        g = calcul_g(nbs, period)
+        r = calcul_r(nbs, period)
+        txt = switch(r, calcul_r(nbs[:-1], period))
+        s = calcul_s(nbs, period)
+
+        print("g=" + str(g) + "\tr=" + str(r) + "%\ts="+ str(s) + txt)
+
+        try:
+            inp = input()
+        except (EOFError, KeyboardInterrupt):
+            exit(84)
+        # calc_weirdest_value(nbs, period)
+
+
+if __name__ == '__main__':
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument("-h", help="SYNOPSIS\t./groundhog period\nDESCRIPTION\tperiod\tthe number of days defining a period")
+    # args = parser.parse_args()
+    # print("tre")
+    if (len(sys.argv) != 2):
+        help_me()
+        exit(84)
+
+    if (sys.argv[1] == "-h"):
+        help_me()
+        exit(0)
+    
+    
+    try:
+        a = int(sys.argv[1])
+    except ValueError:
+        print("Enter a valid number please")
+        exit(84)
+    # if a > 0:
+    #     main(a)
+    #     exit(0)
+    # exit(84)
+    # print(a)
+    # print(type(a))
+    main(a)
